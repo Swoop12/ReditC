@@ -8,24 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		F72EE7C0214972400024B85A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F72EE7BF214972400024B85A /* AppDelegate.m */; };
-		F72EE7C3214972400024B85A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72EE7C2214972400024B85A /* ViewController.m */; };
 		F72EE7C6214972400024B85A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72EE7C4214972400024B85A /* Main.storyboard */; };
 		F72EE7C8214972410024B85A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72EE7C7214972410024B85A /* Assets.xcassets */; };
 		F72EE7CB214972410024B85A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72EE7C9214972410024B85A /* LaunchScreen.storyboard */; };
 		F72EE7CE214972410024B85A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F72EE7CD214972410024B85A /* main.m */; };
+		F72EE7D7214977DF0024B85A /* TRASubreddit.m in Sources */ = {isa = PBXBuildFile; fileRef = F72EE7D6214977DF0024B85A /* TRASubreddit.m */; };
+		F72EE7DB21497F9A0024B85A /* TRASubredditClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F72EE7DA21497F9A0024B85A /* TRASubredditClient.m */; };
+		F72EE7E22149A02D0024B85A /* SubRedditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72EE7E12149A02D0024B85A /* SubRedditTableViewController.swift */; };
+		F72EE7E52149A1990024B85A /* SubRedditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72EE7E42149A1990024B85A /* SubRedditTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F72EE7BB214972400024B85A /* ReditC2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReditC2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72EE7BE214972400024B85A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F72EE7BF214972400024B85A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F72EE7C1214972400024B85A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F72EE7C2214972400024B85A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F72EE7C5214972400024B85A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F72EE7C7214972410024B85A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F72EE7CA214972410024B85A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F72EE7CC214972410024B85A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F72EE7CD214972410024B85A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F72EE7D5214977DF0024B85A /* TRASubreddit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRASubreddit.h; sourceTree = "<group>"; };
+		F72EE7D6214977DF0024B85A /* TRASubreddit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRASubreddit.m; sourceTree = "<group>"; };
+		F72EE7D921497F9A0024B85A /* TRASubredditClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRASubredditClient.h; sourceTree = "<group>"; };
+		F72EE7DA21497F9A0024B85A /* TRASubredditClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRASubredditClient.m; sourceTree = "<group>"; };
+		F72EE7E02149A02C0024B85A /* ReditC2.0-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReditC2.0-Bridging-Header.h"; sourceTree = "<group>"; };
+		F72EE7E12149A02D0024B85A /* SubRedditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubRedditTableViewController.swift; sourceTree = "<group>"; };
+		F72EE7E42149A1990024B85A /* SubRedditTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubRedditTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +66,54 @@
 		F72EE7BD214972400024B85A /* ReditC2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				F72EE7D4214975020024B85A /* Resources */,
+				F72EE7DC21499FAF0024B85A /* Clients */,
+				F72EE7D821497F5D0024B85A /* Models */,
+				F72EE7E12149A02D0024B85A /* SubRedditTableViewController.swift */,
+				F72EE7E32149A0790024B85A /* SupportFiles */,
+				F72EE7E42149A1990024B85A /* SubRedditTableViewCell.swift */,
+			);
+			path = ReditC2.0;
+			sourceTree = "<group>";
+		};
+		F72EE7D4214975020024B85A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				F72EE7BE214972400024B85A /* AppDelegate.h */,
 				F72EE7BF214972400024B85A /* AppDelegate.m */,
-				F72EE7C1214972400024B85A /* ViewController.h */,
-				F72EE7C2214972400024B85A /* ViewController.m */,
 				F72EE7C4214972400024B85A /* Main.storyboard */,
 				F72EE7C7214972410024B85A /* Assets.xcassets */,
 				F72EE7C9214972410024B85A /* LaunchScreen.storyboard */,
 				F72EE7CC214972410024B85A /* Info.plist */,
 				F72EE7CD214972410024B85A /* main.m */,
 			);
-			path = ReditC2.0;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F72EE7D821497F5D0024B85A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F72EE7D5214977DF0024B85A /* TRASubreddit.h */,
+				F72EE7D6214977DF0024B85A /* TRASubreddit.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F72EE7DC21499FAF0024B85A /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				F72EE7D921497F9A0024B85A /* TRASubredditClient.h */,
+				F72EE7DA21497F9A0024B85A /* TRASubredditClient.m */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		F72EE7E32149A0790024B85A /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F72EE7E02149A02C0024B85A /* ReditC2.0-Bridging-Header.h */,
+			);
+			name = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +147,7 @@
 				TargetAttributes = {
 					F72EE7BA214972400024B85A = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -141,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F72EE7C3214972400024B85A /* ViewController.m in Sources */,
+				F72EE7E52149A1990024B85A /* SubRedditTableViewCell.swift in Sources */,
+				F72EE7E22149A02D0024B85A /* SubRedditTableViewController.swift in Sources */,
+				F72EE7D7214977DF0024B85A /* TRASubreddit.m in Sources */,
 				F72EE7CE214972410024B85A /* main.m in Sources */,
 				F72EE7C0214972400024B85A /* AppDelegate.m in Sources */,
+				F72EE7DB21497F9A0024B85A /* TRASubredditClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,14 +334,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ReditC2.0/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ReditC2.0/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.trevoradcock.ReditC2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReditC2.0/ReditC2.0-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -301,14 +354,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ReditC2.0/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ReditC2.0/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.trevoradcock.ReditC2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReditC2.0/ReditC2.0-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
